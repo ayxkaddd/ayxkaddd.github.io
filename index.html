@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fishing</title>
-</head>
-<body>
-  <style>
-    body {
-        background-color: black;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        height: 100vh; 
-        margin: 0;
-    
-    }
-    </style>
-    <center>
+<html>
+<head>     
+    <!-- yeah i stole that from vile who the fuck cares i liked it stfu  -->
+    <title>fishing</title>
+    <link rel="stylesheet" href="css/anim.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <img class="hanginggirl animated infinite swing nodrag" draggable="false" src="pics/pic.png" style="display: block;">
+    <br>
     <p>htb.eu/notthefish</p>
     <pre>
     ⠀⠀⠉⠛⠛⠻⢿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣶⣶⣶⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀
@@ -37,14 +25,8 @@
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁
     <pre>
-    <br>
-    </center>
-    <audio id="audioPlayer" controls autoplay>
-      <source src="deadinside.mp3" type="audio/mpeg">
+    <audio id="audioPlayer" controls autoplay loop style="display: none;">
+        <source src="deadinside.mp3" type="audio/mpeg">
     </audio>
-    <script>
-      const audioPlayer = document.getElementById("audioPlayer");
-      audioPlayer.style.display = "none";
-    </script>
 </body>
 </html>
