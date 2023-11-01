@@ -9,6 +9,7 @@ body {
     overflow-y: hidden;
     max-width: 100%;
    	overflow-x: hidden;
+    cursor: default;
 }
 
 .hanginggirl {
@@ -28,4 +29,15 @@ body {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+  
+a:hover {
+    text-decoration:wavy;
+    color: grey;
 }
