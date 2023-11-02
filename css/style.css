@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: 100%;
     font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 15px;
     text-align: center;
     color: white;
     overflow-y: hidden;
@@ -18,7 +19,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden !important;
-    max-height: 250px;
+    max-height: 300px;
     filter: grayscale(1) contrast(200%);
 }
 
@@ -34,10 +35,9 @@ body {
 a {
     text-decoration: none;
     color: white;
-    transition: color 0.2s;
+    transition: color 0.9s;
 }
   
 a:hover {
-    text-decoration:wavy;
     color: grey;
 }
