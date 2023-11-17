@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/gif" href="favico.gif">
+    <link rel="icon" type="image/gif" href="pics/lain3.gif">
     <meta content="draaain gaaaang" property="og:title" />
     <meta content="i got bwadee on my teef yk today i got blade on my teez s925 SPECHAL bOHH" property="og:description" />
     <meta content="https://embed.ayxdacat.lol" property="og:url" />
@@ -9,20 +9,46 @@
     <meta content="#000000" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image">
 </head>
-<body>  
-    <audio controls autoplay loop style="display: none;" src="deadinside.mp3"></audio>   
+<body>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/audio.js"></script>
+    <div id="player"></div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const url = params.get('redirect');
+        if (url) {
+            window.location.href = url;
+        }
+    </script>
     <!-- yeah i stole that from vile who the fuck cares i liked it stfu  -->
     <title>x</title>
     <link rel="stylesheet" href="css/anim.css">
     <link rel="stylesheet" href="css/style.css">
-    <img class="hanginggirl animated infinite swing nodrag" draggable="false" src="pics/pic.png" style="display: block;">
 
+    <img class="" draggable="false" src="" id="image" style="display: block;">
+
+    <script>
+        const picture = document.getElementById('image');
+        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif'];
+        const randomIndex = Math.floor(Math.random() * imageSources.length);
+
+        picture.src = imageSources[randomIndex];
+        
+        if (picture.src.includes('pic.png')) {
+            picture.className = 'hanginggirl animated infinite swing nodrag';
+        } else {
+            picture.className = 'hanginggirl animated infinite nodrag';
+        }
+    </script>
     <pre>
-    <a href="https://hackmyvm.eu/public/?u=NotTheFish" target="_blank">hmv.eu/notthefish</a>
-    <a href="https://app.hackthebox.com/profile/1281845" target="_blank">htb.app/notthefish</a>
-    <a href="https://github.com/ayxkaddd/" target="_blank">github.com/ayxkaddd</a>
-    </pre>
+<a href="https://hackmyvm.eu/public/?u=NotTheFish" target="_blank">hmv.eu/notthefish</a>
+<a href="https://app.hackthebox.com/profile/1281845" target="_blank">htb.app/notthefish</a>
+<a href="https://github.com/ayxkaddd/" target="_blank">github.com/ayxkaddd</a>
+</pre>
     <pre id="art"></pre>
     <script src="js/rand.js"></script>
+    <pre>
+    <div id="songtitle">not playing</div>
+    </pre>
 </body>
 </html>
