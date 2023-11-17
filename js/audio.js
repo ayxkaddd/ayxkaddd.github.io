@@ -20,5 +20,5 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
     event.target.playVideo();
-    document.getElementById("songtitle").innerHTML = '<a title="Lest all love Lain" href="https://www.youtube.com/watch?v=' + player.getVideoData().video_id + '" target="_blank">' + player.getVideoData().title + '</a>';
+    document.getElementById("songtitle").innerHTML = '<a title="Lets all love Lain" href="https://www.youtube.com/watch?v=' + player.getVideoData().video_id + '" target="_blank">' + player.getVideoData().title + '</a>';
 }
