@@ -27,16 +27,17 @@
     <a class="cursor" onclick="location.reload();">
         <img class="" draggable="false" src="" id="image" style="display: block;">
     </a>
-    </div>
     <script>
         const picture = document.getElementById('image');
-        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif'];
+        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif', 'pics/lain6.gif', 'pics/laihhhn3.gif'];
         const randomIndex = Math.floor(Math.random() * imageSources.length);
 
         picture.src = imageSources[randomIndex];
         
         if (picture.src.includes('pic.png')) {
             picture.className = 'hanginggirl animated infinite swing nodrag';
+        } else if (picture.src.includes('laihhhn3.gif')) {
+            picture.className = 'nocontrast animated infinite nodrag'
         } else {
             picture.className = 'hanginggirl animated infinite nodrag';
         }

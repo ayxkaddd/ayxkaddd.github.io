@@ -21,6 +21,16 @@ body {
     filter: grayscale(1) contrast(200%);
 }
 
+.nocontrast {
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden !important;
+    max-height: 300px;
+    filter: grayscale(0); 
+}
+
 .nodrag {
     user-drag: none;
     user-select: none;
