@@ -13,13 +13,6 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/audio.js"></script>
     <div id="player"></div>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const url = params.get('redirect');
-        if (url) {
-            window.location.href = url;
-        }
-    </script>
     <title>x</title>
     <link rel="stylesheet" href="css/anim.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,8 +21,14 @@
         <img class="" draggable="false" src="" id="image" style="display: block;">
     </a>
     <script>
+        const params = new URLSearchParams(window.location.search);
+        const url = params.get('redirect');
+        if (url) {
+            window.location.href = url;
+        }
+        
         const picture = document.getElementById('image');
-        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif', 'pics/lain6.gif', 'pics/laihhhn3.gif'];
+        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif', 'pics/lain6.gif', 'pics/laihhhn3.gif', 'pics/lain7.gif', 'pics/tvlain.gif', 'pics/stand.gif'];
         const randomIndex = Math.floor(Math.random() * imageSources.length);
 
         picture.src = imageSources[randomIndex];
@@ -42,7 +41,7 @@
             picture.className = 'hanginggirl animated infinite nodrag';
         }
     </script>
-    <pre>
+<pre>
 <a href="https://hackmyvm.eu/public/?u=NotTheFish" target="_blank">hmv.eu/notthefish</a>
 <a href="https://app.hackthebox.com/profile/1281845" target="_blank">htb.app/notthefish</a>
 <a href="https://github.com/ayxkaddd/" target="_blank">github.com/ayxkaddd</a>
