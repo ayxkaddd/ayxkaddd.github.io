@@ -9,6 +9,7 @@ body {
     color: white;
     max-width: 100%;
     cursor: default;
+    overflow: hidden;
 }
 
 .hanginggirl {
