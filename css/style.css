@@ -18,7 +18,6 @@ body {
     }
 }
 
-/* Adjustments for smaller screens (mobile) */
 @media only screen and (max-width: 600px) {
     .hanginggirl,
     .nocontrast {
@@ -28,15 +27,13 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px; /* Example: Decrease font size for smaller screens */
+        font-size: 14px;
     }
 
     .hanginggirl,
     .nocontrast {
-        max-height: 150px; /* Example: Adjust max-height for smaller screens */
+        max-height: 150px;
     }
-
-    /* Add more adjustments as needed */
 }
 
 
