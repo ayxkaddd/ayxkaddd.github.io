@@ -9,8 +9,36 @@ body {
     color: white;
     max-width: 100%;
     cursor: default;
-    overflow: hidden;
 }
+
+@media only screen and (min-width: 601px) {
+    .hanginggirl,
+    .nocontrast {
+        overflow: hidden !important;
+    }
+}
+
+/* Adjustments for smaller screens (mobile) */
+@media only screen and (max-width: 600px) {
+    .hanginggirl,
+    .nocontrast {
+        overflow: visible !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Example: Decrease font size for smaller screens */
+    }
+
+    .hanginggirl,
+    .nocontrast {
+        max-height: 150px; /* Example: Adjust max-height for smaller screens */
+    }
+
+    /* Add more adjustments as needed */
+}
+
 
 .hanginggirl {
     margin-top: 0;
