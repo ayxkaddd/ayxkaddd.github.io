@@ -1,66 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <link rel="icon" type="image/gif" href="pics/lain3.gif">
-    <meta content="take a knife and drain your life" property="og:title" />
-    <meta content="i got bwadee on my teef yk today i got blade on my teez s925 SPECHAL bOHH" property="og:description" />
-    <meta content="https://embed.ayxdacat.lol" property="og:url" />
-    <meta content="pics/lain3.gif" property="og:image" />
-    <meta content="#000000" data-react-helmet="true" name="theme-color" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="js/audio.js"></script>
-    <div id="player"></div>
-    <title>x</title>
-    <link rel="stylesheet" href="css/anim.css">
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <link rel="icon" type="image/gif" href="pics/lain3.gif" />
+        <meta content="take a knife and drain your life" property="og:title" />
+        <meta
+            content="i got bwadee on my teef yk today i got blade on my teez s925 SPECHAL bOHH"
+            property="og:description"
+        />
+        <meta content="https://embed.ayxdacat.lol" property="og:url" />
+        <meta content="pics/lain3.gif" property="og:image" />
+        <meta content="#000000" data-react-helmet="true" name="theme-color" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="js/audio.js"></script>
+        <div id="player"></div>
+        <title>x</title>
+        <link rel="stylesheet" href="css/anim.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
-    <a class="cursor" onclick="location.reload();">
-        <img class="" draggable="false" src="" id="image" style="display: block;">
-    </a>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const url = params.get('redirect');
-        if (url) {
-            window.location.href = url;
-        }
-        
-        const picture = document.getElementById('image');
-        const imageSources = ['pics/pic.png', 'pics/lain.gif', 'pics/lain2.gif', 'pics/lain3.gif', 'pics/lain4.gif', 'pics/lain5.gif', 'pics/lain6.gif', 'pics/laihhhn3.gif', 'pics/lain7.gif', 'pics/tvlain.gif', 'pics/stand.gif'];
-        const randomIndex = Math.floor(Math.random() * imageSources.length);
+        <a class="cursor" onclick="location.reload();">
+            <img
+                class=""
+                draggable="false"
+                src=""
+                id="image"
+                style="display: block"
+            />
+        </a>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const url = params.get("redirect");
+            if (url) {
+                window.location.href = url;
+            }
 
-        picture.src = imageSources[randomIndex];
-        
-        if (picture.src.includes('pic.png')) {
-            picture.className = 'hanginggirl animated infinite swing nodrag';
-        } else if (picture.src.includes('laihhhn3.gif')) {
-            picture.className = 'nocontrast animated infinite nodrag'
-        } else {
-            picture.className = 'hanginggirl animated infinite nodrag';
-        }
-    </script>
-    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-    <script>
-        var sf = new Snowflakes({
-            color: "#ffffff",
-            speed: 0.2,
-            wind: true
-        });
-    </script>
-    
-<pre>
+            const picture = document.getElementById("image");
+            const imageSources = [
+                "pics/pic.png",
+                "pics/lain.gif",
+                "pics/lain2.gif",
+                "pics/lain3.gif",
+                "pics/lain4.gif",
+                "pics/lain5.gif",
+                "pics/lain6.gif",
+                "pics/laihhhn3.gif",
+                "pics/lain7.gif",
+                "pics/tvlain.gif",
+                "pics/stand.gif",
+            ];
+            const randomIndex = Math.floor(Math.random() * imageSources.length);
+
+            picture.src = imageSources[randomIndex];
+
+            if (picture.src.includes("pic.png")) {
+                picture.className =
+                    "hanginggirl animated infinite swing nodrag";
+            } else if (picture.src.includes("laihhhn3.gif")) {
+                picture.className = "nocontrast animated infinite nodrag";
+            } else {
+                picture.className = "hanginggirl animated infinite nodrag";
+            }
+        </script>
+        <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+        <script>
+            var sf = new Snowflakes({
+                color: "#ffffff",
+                speed: 0.2,
+                wind: true,
+            });
+        </script>
+
+        <pre class="links nodrag">
 <a href="https://hackmyvm.eu/public/?u=NotTheFish" target="_blank">hmv.eu/notthefish</a>
 <a href="https://app.hackthebox.com/profile/1281845" target="_blank">htb.app/notthefish</a>
 <a href="https://github.com/ayxkaddd/" target="_blank">github.com/ayxkaddd</a>
 <a href="mailto:ayxdacat@hitler.rocks">ayxdacat@hitler.rocks</a>
 </pre>
-    <pre id="art" style="font-size: smaller;"></pre>
-    <script src="js/rand.js"></script>
-    <pre>
-    <div id="songtitle">not playing</div>
+        <pre class="nodrag" id="art" style="font-size: smaller"></pre>
+        <script src="js/rand.js"></script>
+        <pre>
+    <div class="nodrag" id="songtitle">not playing</div>
     </pre>
-</body>
+    </body>
 </html>
