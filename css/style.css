@@ -1,114 +1,143 @@
 body {
-    background-color: rgb(6, 6, 6);
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial,
-        sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: white;
-    max-width: 100%;
-    cursor: default;
+  background-color: rgb(6, 6, 6);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  cursor: default;
 }
 
 @media only screen and (min-width: 601px) {
-    .hanginggirl,
-    .nocontrast {
-        overflow: hidden !important;
-    }
+  .hanginggirl,
+  .nocontrast {
+    overflow: hidden !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .hanginggirl,
-    .nocontrast {
-        overflow: visible !important;
-    }
+  .hanginggirl,
+  .nocontrast {
+    overflow: visible !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .hanginggirl,
-    .nocontrast {
-        max-height: 150px;
-    }
+  body {
+    font-size: 14px;
+  }
+  .hanginggirl,
+  .nocontrast {
+    max-height: 150px;
+  }
 }
 
 .hanginggirl {
-    margin-top: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden !important;
-    max-height: 300px;
-    filter: grayscale(1) contrast(200%);
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden !important;
+  max-height: 300px;
+  filter: grayscale(1) contrast(200%);
 }
 
 .nocontrast {
-    margin-top: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden !important;
-    max-height: 300px;
-    filter: grayscale(0);
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden !important;
+  max-height: 300px;
+  filter: grayscale(0);
 }
 
 .nodrag {
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .cursor {
-    cursor: url("https://fauux.neocities.org/cursor2.gif"), auto;
-    display: inline-block;
+  cursor: url("https://fauux.neocities.org/cursor2.gif"), auto;
+  display: inline-block;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.5s;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
 }
 
 a:hover {
-    color: #aaaaaa;
+  color: #aaaaaa;
 }
 
 .links {
-    margin: 20px auto;
-    max-width: 400px;
-    text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
 }
 
 .links a {
-    display: inline-block;
-    margin: 5px 10px;
-    position: relative;
+  display: inline-block;
+  margin: 5px 10px;
+  position: relative;
 }
 
 .links a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: white;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
 .links a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 #songtitle {
-    margin-top: 10px;
-    font-style: italic;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Navigation styles */
+.nav-link {
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Project card hover effects */
+.project-card {
+  backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }

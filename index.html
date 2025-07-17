@@ -1,42 +1,66 @@
 <!doctype html>
 <html>
-    <head>
-        <link rel="icon" type="image/gif" href="pics/lain3.gif" />
-        <meta content="take a knife and drain your life" property="og:title" />
-        <meta
-            content="i got bwadee on my teef yk today i got blade on my teez s925 SPECHAL bOHH"
-            property="og:description"
-        />
-        <meta content="https://embed.ayxdacat.lol" property="og:url" />
-        <meta content="pics/lain3.gif" property="og:image" />
-        <meta content="#000000" data-react-helmet="true" name="theme-color" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="js/audio.js"></script>
-        <div id="player"></div>
-        <title>x</title>
-        <link rel="stylesheet" href="css/anim.css" />
-        <link rel="stylesheet" href="css/style.css" />
+<head>
+    <link rel="icon" type="image/gif" href="pics/lain3.gif" />
+    <meta content="take a knife and drain your life" property="og:title" />
+    <meta content="i got bwadee on my teef yk today i got blade on my teez s925 SPECHAL bOHH" property="og:description"/>
+    <meta content="https://embed.ayxdacat.lol" property="og:url" />
+    <meta content="pics/lain3.gif" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>x</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/anim.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/audio.js"></script>
+    <div id="player"></div>
 
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <button id="muteBtn" onclick="toggleMute()"
+                class="music-control-btn bg-black bg-opacity-80 backdrop-blur-sm border border-gray-700 text-white p-3 rounded-full hover:bg-opacity-100 hover:border-gray-500 transition-all duration-300 group"
+                title="Mute/Unmute">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+            </svg>
+        </button>
+
+        <button id="nextBtn" onclick="playNext()"
+                class="music-control-btn bg-black bg-opacity-80 backdrop-blur-sm border border-gray-700 text-white p-3 rounded-full hover:bg-opacity-100 hover:border-gray-500 transition-all duration-300 group"
+                title="Next Song">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+            </svg>
+        </button>
+    </div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 py-3">
+            <div class="flex justify-center space-x-8">
+                <a href="index.html" class="nav-link text-white hover:text-gray-400 transition-colors duration-300 text-sm uppercase tracking-wider border-b border-white">
+                    Home
+                </a>
+                <a href="projects.html" class="nav-link text-white hover:text-gray-400 transition-colors duration-300 text-sm uppercase tracking-wider">
+                    Projects
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content pt-16">
         <a class="cursor" onclick="location.reload();">
-            <img
-                class=""
-                draggable="false"
-                src=""
-                id="image"
-                style="display: block"
-            />
+            <img class="" draggable="false" src="/placeholder.svg" id="image" style="display: block"/>
         </a>
+
         <script>
             const params = new URLSearchParams(window.location.search);
             const url = params.get("redirect");
             if (url) {
                 window.location.href = url;
             }
-
             const picture = document.getElementById("image");
             const imageSources = [
                 "pics/pic.png",
@@ -52,18 +76,16 @@
                 "pics/stand.gif",
             ];
             const randomIndex = Math.floor(Math.random() * imageSources.length);
-
             picture.src = imageSources[randomIndex];
-
             if (picture.src.includes("pic.png")) {
-                picture.className =
-                    "hanginggirl animated infinite swing nodrag";
+                picture.className = "hanginggirl animated infinite swing nodrag";
             } else if (picture.src.includes("laihhhn3.gif")) {
                 picture.className = "nocontrast animated infinite nodrag";
             } else {
                 picture.className = "hanginggirl animated infinite nodrag";
             }
         </script>
+
         <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
         <script>
             var sf = new Snowflakes({
@@ -78,11 +100,16 @@
 <a href="https://app.hackthebox.com/profile/1281845" target="_blank">htb.app/notthefish</a>
 <a href="https://github.com/ayxkaddd/" target="_blank">github.com/ayxkaddd</a>
 <a href="mailto:ayxdacat@hitler.rocks">ayxdacat@hitler.rocks</a>
-</pre>
+        </pre>
+
         <pre class="nodrag" id="art" style="font-size: smaller"></pre>
         <script src="js/rand.js"></script>
+
         <pre>
-    <div class="nodrag" id="songtitle">not playing</div>
-    </pre>
-    </body>
+            <div class="nodrag" id="songtitle">not playing</div>
+        </pre>
+    </div>
+
+    <script src="js/navigation.js"></script>
+</body>
 </html>
