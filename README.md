@@ -1,1 +1,0 @@
-<p align="center"><img src="https://ayxdacat.lol/favico.gif"></p>
